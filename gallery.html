@@ -1,52 +1,91 @@
 <!DOCTYPE html>
+<!-- Оголошення типу документа HTML5 -->
 <html lang="uk">
+<!-- Встановлення мови документа як українська -->
 <head>
+    <!-- Мета-теги та підключення ресурсів -->
     <meta charset="UTF-8">
+    <!-- Вказує кодування символів UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Налаштування адаптивності для різних пристроїв -->
     <title>EcoWood - Асортимент</title>
+    <!-- Заголовок сторінки, який відображається у вкладці браузера -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Підключення файлу стилів CSS -->
     <link rel="icon" type="image/png" href="images/ico.png">
+    <!-- Встановлення іконки для вкладки браузера -->
 </head>
 <body>
+<!-- Тіло сторінки, де розміщується весь видимий вміст -->
 <header>
+    <!-- Шапка сайту -->
     <img src="images/i.gif" alt="листя" class="header-image">
+    <!-- Зображення листя в шапці, яке слугує фоном -->
     <img src="images/nebo.png" alt="небо" class="header-nebo">
+    <!-- Зображення неба в шапці, яке створює ефект глибини -->
     <div><h1 class="header-title">EcoWood</h1></div>
+    <!-- Заголовок сайту, розташований у шапці -->
     <nav>
+        <!-- Навігаційне меню -->
         <ul>
+            <!-- Список пунктів меню -->
             <li><a href="index.html" class="nav-link"><img class="icon" src="images/home.png" alt="home Icon">Головна</a></li>
+            <!-- Посилання на головну сторінку з іконкою -->
             <li><a href="about.html" class="nav-link"><img class="icon" src="images/sakura.png" alt="sakura Icon">Про дерева</a></li>
+            <!-- Посилання на сторінку "Про дерева" з іконкою -->
             <li><a href="gallery.html" class="nav-link"><img class="icon" src="images/picture.png" alt="picture Icon">Асортимент</a></li>
+            <!-- Посилання на сторінку "Асортимент" з іконкою -->
             <li><a href="contact.html" class="nav-link"><img class="icon" src="images/mail.png" alt="mail Icon">Контакти</a></li>
+            <!-- Посилання на сторінку "Контакти" з іконкою -->
         </ul>
     </nav>
 </header>
 <main>
+    <!-- Основний вміст сторінки -->
     <div class="leaves-container">
+        <!-- Контейнер для анімованих листочків, що падають -->
         <div class="leaf" style="left: 10%; --move-x: 20vw; --rotate: 180deg; animation-delay: 0s;"></div>
+        <!-- Листочок з початковою позицією 10%, рухом вправо на 20vw, обертанням на 180 градусів -->
         <div class="leaf" style="left: 30%; --move-x: -30vw; --rotate: 270deg; animation-delay: 3s;"></div>
+        <!-- Листочок з початковою позицією 30%, рухом вліво на 30vw, обертанням на 270 градусів -->
         <div class="leaf" style="left: 50%; --move-x: 15vw; --rotate: 360deg; animation-delay: 5s;"></div>
+        <!-- Листочок з початковою позицією 50%, рухом вправо на 15vw, обертанням на 360 градусів -->
         <div class="leaf" style="left: 70%; --move-x: -25vw; --rotate: 200deg; animation-delay: 7s;"></div>
+        <!-- Листочок з початковою позицією 70%, рухом вліво на 25vw, обертанням на 200 градусів -->
         <div class="leaf" style="left: 90%; --move-x: 10vw; --rotate: 400deg; animation-delay: 10s;"></div>
+        <!-- Листочок з початковою позицією 90%, рухом вправо на 10vw, обертанням на 400 градусів -->
     </div>
     <section class="page gallery">
+        <!-- Секція для відображення асортименту дерев -->
         <div class="tree-cards">
+            <!-- Контейнер для карток дерев -->
             <div class="tree-card" data-title="Дуб" data-price="1500 грн" data-full-description="Дуб — це міцне та довговічне дерево, яке може жити сотні років. Його деревина використовується в будівництві та меблевій промисловості, а густе листя створює чудовий затінок. Ідеально підходить для великих садів та парків.">
+                <!-- Картка для дерева "Дуб" -->
                 <div class="card-slider">
+                    <!-- Слайдер із зображеннями -->
                     <div class="card-slides">
+                        <!-- Контейнер для слайдів -->
                         <img src="images/dub.png" alt="Дуб">
+                        <!-- Перше зображення дуба -->
                         <img src="images/dub1.png" alt="Дуб 1">
+                        <!-- Друге зображення дуба -->
                         <img src="images/dub2.png" alt="Дуб 2">
+                        <!-- Третє зображення дуба -->
                     </div>
                     <button class="card-prev">❮</button>
+                    <!-- Кнопка для попереднього слайду -->
                     <button class="card-next">❯</button>
+                    <!-- Кнопка для наступного слайду -->
                 </div>
                 <div class="tree-price">1500 грн</div>
+                <!-- Відображення ціни -->
                 <div class="tree-hover-description">
+                    <!-- Короткий опис, який з’являється при наведенні -->
                     <p>Міцний дуб — символ довговічності...</p>
                 </div>
             </div>
             <div class="tree-card" data-title="Сосна" data-price="1200 грн" data-full-description="Сосна — вічнозелене хвойне дерево, яке радує своєю зеленню цілий рік. Вона стійка до морозів і невибаглива у догляді. Чудовий вибір для створення природного ландшафту.">
+                <!-- Картка для дерева "Сосна" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/sosna.png" alt="Сосна">
@@ -62,6 +101,7 @@
                 </div>
             </div>
             <div class="tree-card" data-title="Береза" data-price="1000 грн" data-full-description="Береза — це ніжне листяне дерево з білою корою, яке додає легкості будь-якому ландшафту. Її листя восени стає золотистим, створюючи мальовничу картину. Підходить для невеликих садів.">
+                <!-- Картка для дерева "Береза" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/bereza.png" alt="Береза">
@@ -77,6 +117,7 @@
                 </div>
             </div>
             <div class="tree-card" data-title="Каштан" data-price="800 грн" data-full-description="Каштан – величне листяне дерево з широкою кроною та великими пальчастими листками. Навесні тішить пишними біло-рожевими суцвіттями, а восени дає колючі плоди з блискучими коричневими горіхами. Ідеальне для міських алей та парків.">
+                <!-- Картка для дерева "Каштан" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/kashtan.png" alt="Каштан">
@@ -92,6 +133,7 @@
                 </div>
             </div>
             <div class="tree-card" data-title="Кедр" data-price="1500 грн" data-full-description="Кедр – могутнє вічнозелене хвойне дерево з густою кроною та м’якими голками. Його деревина цінується за міцність, а аромат хвої заспокоює. Часто висаджується в садах як символ вічності.">
+                <!-- Картка для дерева "Кедр" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/kedr.png" alt="Кедр">
@@ -107,6 +149,7 @@
                 </div>
             </div>
             <div class="tree-card" data-title="Клен" data-price="700 грн" data-full-description="Клен – декоративне листяне дерево, відоме різноманітними формами листя та яскравими осінніми барвами – від золотистого до багряного. Стійке до міських умов, популярне в ландшафтному дизайні.">
+                <!-- Картка для дерева "Клен" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/klen.png" alt="Клен">
@@ -122,6 +165,7 @@
                 </div>
             </div>
             <div class="tree-card" data-title="Липа" data-price="600 грн" data-full-description="Липа – ароматне листяне дерево з серцеподібними листками та дрібними запашними квітами, які приваблюють бджіл. Її мед і чай із суцвіть цінуються в народі. Тінь від липи створює затишок.">
+                <!-- Картка для дерева "Липа" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/lypa.png" alt="Липа">
@@ -137,6 +181,7 @@
                 </div>
             </div>
             <div class="tree-card" data-title="Сакура" data-price="2000 грн" data-full-description="Сакура – витончене декоративне дерево, що вражає ніжними рожевими або білими квітами навесні. Символ Японії, потребує сонячних ділянок і захисту від морозів. Популярне для садів і фотосесій.">
+                <!-- Картка для дерева "Сакура" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/sakuraa.png" alt="Сакура">
@@ -152,6 +197,7 @@
                 </div>
             </div>
             <div class="tree-card" data-title="Верба" data-price="500 грн" data-full-description="Верба – граціозне дерево з довгими гнучкими гілками, що часто росте біля річок і ставків. Її пухнасті 'котики' – символ весни та Великодня в Україні. Невимоглива до ґрунту.">
+                <!-- Картка для дерева "Верба" -->
                 <div class="card-slider">
                     <div class="card-slides">
                         <img src="images/verba.png" alt="Верба">
@@ -168,29 +214,47 @@
             </div>
         </div>
         <div class="modal" id="tree-modal">
+            <!-- Модальне вікно для детального перегляду дерева -->
             <div class="modal-content">
+                <!-- Вміст модального вікна -->
                 <button class="modal-close">×</button>
+                <!-- Кнопка закриття модального вікна -->
                 <div class="modal-slider">
+                    <!-- Слайдер у модальному вікні -->
                     <div class="modal-slides"></div>
+                    <!-- Контейнер для слайдів у модальному вікні -->
                     <button class="modal-prev">❮</button>
+                    <!-- Кнопка для попереднього слайду -->
                     <button class="modal-next">❯</button>
+                    <!-- Кнопка для наступного слайду -->
                 </div>
                 <div class="modal-info">
+                    <!-- Інформаційна частина модального вікна -->
                     <h3 class="modal-title"></h3>
+                    <!-- Заголовок модального вікна (назва дерева) -->
                     <p class="modal-description"></p>
+                    <!-- Опис дерева -->
                     <p class="modal-price"></p>
+                    <!-- Ціна дерева -->
                     <a href="https://t.me/+zcvSXm55aH85OWZi" class="buy-button" target="_blank">Купити</a>
+                    <!-- Кнопка для покупки через Telegram -->
                 </div>
             </div>
         </div>
     </section>
 </main>
 <footer>
+    <!-- Підвал сайту -->
     <div class="image-row">
+        <!-- Контейнер для зображень трави та тексту -->
         <img src="images/grass.png" alt="трава" class="grass">
+        <!-- Перше зображення трави -->
         <img src="images/grass.png" alt="трава" class="grass">
+        <!-- Друге зображення трави -->
         <div class="footer-text">
+            <!-- Текст у підвалі -->
             <p>&copy; 2025 EcoWood. Всі права захищено.</p>
+            <!-- Авторські права -->
         </div>
     </div>
 </footer>
